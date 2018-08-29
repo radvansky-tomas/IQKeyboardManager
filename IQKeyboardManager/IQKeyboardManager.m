@@ -147,9 +147,6 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
     /** To save keyboardWillShowNotification. Needed for enable keyboard functionality. */
     NSNotification          *_kbShowNotification;
     
-    /** To save keyboard size. */
-    CGSize                   _kbSize;
-    
     /*******************************************/
 }
 
@@ -183,6 +180,9 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
 
 //Animation handling
 @synthesize layoutIfNeededOnUpdate              =   _layoutIfNeededOnUpdate;
+
+//To save keyboard size.
+@synthesize kbSize                              =   _kbSize;
 
 #pragma mark - Initializing functions
 
